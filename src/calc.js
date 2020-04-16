@@ -6,18 +6,6 @@ export function DateInput (month, day, year) {
   this.year = year;
 }
 
-DateInput.prototype.findWeekday = function () {
-  let convertMonth = this.month - 1;
-  let convertDate = new Date(this.year, convertMonth, this.day);
-  return convertDate.getDay();
-}
-
-DateInput.prototype.displayDayName = function () {
-  let dayConvert = this.findWeekday();
-  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  return weekdays[dayConvert];
-}
-
 DateInput.prototype.validateDate = function () {
   if (this.month < 0 || this.month > 11) {
     return false;
@@ -30,3 +18,14 @@ DateInput.prototype.validateDate = function () {
   }
 }
 
+DateInput.prototype.findWeekday = function () {
+  let convertDate = new Date(this.year, this.month, this.day);
+  console.log("convertDate" + convertDate);
+  return convertDate.getDay();
+}
+
+DateInput.prototype.displayDayName = function () {
+  let dayConvert = this.findWeekday();
+  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return weekdays[dayConvert];
+}
