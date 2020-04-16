@@ -13,21 +13,7 @@ DateInput.prototype.findWeekday = function () {
 }
 
 DateInput.prototype.displayDayName = function () {
-  // let dayConvert = this.findWeekday(); // 0 - 6
-  // console.log("dayConvert " + dayConvert)
-  // const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  // console.log(weekdays[2]);
-  // return weekdays[dayConvert];
+  let dayConvert = this.findWeekday();
+  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return weekdays[dayConvert];
 }
-
-// DateInput.prototype.displayDayName = function () {
-//   let dayConvert = this.findWeekday(); // 0 - 6
-//   // create array, then loop through
-//   dayConvert.forEach()
-//   if (dayConvert === 1) {
-//     return "Monday";
-//   } else if {
-    
-//   }
-
-// }
