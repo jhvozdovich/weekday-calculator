@@ -19,14 +19,14 @@ DateInput.prototype.displayDayName = function () {
 }
 
 DateInput.prototype.validateDate = function () {
-  // if (this.month < 0 || this.month > 11) {
-  //   return false;
-  // } else if (this.day < 1 || this.day > 31) {
-  //   return false;
-  // } else if (this.year < 0) {
-  //   return false;
-  // } else {
-  //   return true;
-  // }
+  if (this.month < 0 || this.month > 11) {
+    return false;
+  } else if (this.day < 1 || this.day > 31) {
+    return false;
+  } else if (this.year < 0) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
