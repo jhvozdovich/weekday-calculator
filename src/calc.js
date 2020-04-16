@@ -20,7 +20,6 @@ DateInput.prototype.validateDate = function () {
 
 DateInput.prototype.findWeekday = function () {
   let convertDate = new Date(this.year, this.month, this.day);
-  console.log("convertDate" + convertDate);
   return convertDate.getDay();
 }
 
