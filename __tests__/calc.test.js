@@ -18,12 +18,17 @@ describe("ValidateDate", () => {
 
   test("should validate if a valid day is entered", () => {
     let date = new DateInput(10, 65, 2000);
-    expect(date.validateDate()).toEqual(false)
+    expect(date.validateDate()).toEqual(false);
   })
 
   test("should validate if a valid year is entered", () => {
     let date = new DateInput(10, 12, -2);
-    expect(date.validateDate()).toEqual(false)
+    expect(date.validateDate()).toEqual(false);
+  })
+
+  test("should validate if a valid date is entered", () => {
+    let date = new DateInput(5, 17, 2002);
+    expect(date.validateDate()).toEqual(true);
   })
 })  
 
