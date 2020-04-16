@@ -6,5 +6,6 @@ describe ("Date", () => {
     expect(date.month).toEqual(11);
     expect(date.day).toEqual(5);
     expect(date.year).toEqual(1990);
-  })
-})
+  });
+});
+
