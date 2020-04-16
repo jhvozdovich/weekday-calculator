@@ -10,6 +10,23 @@ describe ("DateInput", () => {
   });
 });
 
+describe("ValidateDate", () => {
+  test("should validate if a valid month is entered", () => {
+    let date = new DateInput(14, 5, 2000);
+    expect(date.validateDate()).toEqual(false)
+  })
+
+  test("should validate if a valid day is entered", () => {
+    let date = new DateInput(10, 65, 2000);
+    expect(date.validateDate()).toEqual(false)
+  })
+
+  test("should validate if a valid year is entered", () => {
+    let date = new DateInput(10, 12, -2);
+    expect(date.validateDate()).toEqual(false)
+  })
+})  
+
 describe("FindWeekday", () => {
   test("should correctly output the day of the week for a date entry", () => {
     let date = new DateInput(11, 5, 1990);
@@ -23,3 +40,5 @@ describe("displayDayName", () => {
   expect(date.displayDayName()).toEqual("Tuesday");
   });
 });
+
+

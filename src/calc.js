@@ -17,3 +17,16 @@ DateInput.prototype.displayDayName = function () {
   const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   return weekdays[dayConvert];
 }
+
+DateInput.prototype.validateDate = function () {
+  // if (this.month < 0 || this.month > 11) {
+  //   return false;
+  // } else if (this.day < 1 || this.day > 31) {
+  //   return false;
+  // } else if (this.year < 0) {
+  //   return false;
+  // } else {
+  //   return true;
+  // }
+}
+
