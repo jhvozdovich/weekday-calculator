@@ -20,6 +20,6 @@ describe("FindWeekday", () => {
 describe("displayDayName", () => {
   test("should correctly display the day outcome as its corresponding day of the week string", () => {
   let date = new DateInput(11, 6, 1990);
-  expect(date.findWeekday()).toEqual("Tuesday");
+  expect(date.displayDayName()).toEqual("Tuesday");
   });
 });
