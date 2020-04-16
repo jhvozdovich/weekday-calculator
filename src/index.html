@@ -6,14 +6,31 @@
   </head>
   <body>
     <div class="container">
-      <!-- CHANGE INPUT TYPE TO INDIVIDUAL MONTH DAY YEAR -->
-      <form id="date-form">
-        <div class="form-group">
-          <label for="date-input">Enter your day:</label>
-          <input id="date-input" class="form-control" type="date">
-        </div>
-        <button type="submit">Find the day of the week!</button>
-      </form>
+      <p>Pick Month:</p>
+      <form>
+        <select name = "dropdown" id="month-input">
+           <option value = 0>Jan (1)</option>
+           <option value = 1>Feb (2)</option>
+           <option value = 2>Mar (3)</option>
+           <option value = 3>Apr (4)</option>
+           <option value = 4>May (5)</option>
+           <option value = 5>Jun (6)</option>
+           <option value = 6>Jul (7)</option>
+           <option value = 7>Aug (8)</option>
+           <option value = 8>Sep (9)</option>
+           <option value = 9>Oct (10)</option>
+           <option value = 10>Nov (11)</option>
+           <option value = 11>Dec (12)</option>
+        </select>
+        <input type="number" id="day-input" name="day">
+        <input type="number" id="year-input" name="year">
+        <button type="submit">Submit</button>
+        
+     </form>
+      
+    </div>
+    <div id="results">
+
     </div>
   </body>
 </html>
