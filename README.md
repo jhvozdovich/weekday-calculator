@@ -16,7 +16,7 @@ _This webpage allows users to enter a date and determine the day of the week. Th
 
 _Alternatively_
 * After downloading the file preview the webpage by right clicking and opening index.html in the browser of your choice.
-* Visit https://jhvozdovich.github.io/weekday-calculator
+* Visit https://jhvozdovich.github.io/weekday-calculator/
 
 ## Known Bugs
 
