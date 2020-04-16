@@ -10,17 +10,9 @@ describe ("DateInput", () => {
   });
 });
 
-describe ("Date", () => {
-  test("should correctly convert Date Input info to native Date object", () => {
+describe("FindWeekday", () => {
+  test("should correctly output the day of the week for a date entry", () => {
     let date = new DateInput(11, 5, 1990);
-    let convertMonth = date.month - 1;
-    let newDate = new Date (date.year, convertMonth, date.day);
-    expect(newDate.month).toEqual(10);
-    expect(newDate.day).toEqual(5);
-    expect(newDate.year).toEqual(1990);
-  })
-})
-
-// var d = Date.parse("March 21, 2012");
-
-// let birthday = new Date(1995, 11, 17) 
+    expect(date.findWeekday()).toEqual(1);
+  });
+});

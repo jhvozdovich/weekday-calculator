@@ -6,7 +6,8 @@ export function DateInput (month, day, year) {
   this.year = year;
 }
 
-export function Date (year, month, day) {
-
+DateInput.prototype.findWeekday = function () {
+  // let convertMonth = this.month - 1;
+  // let convertDate = new Date(this.year, convertMonth, this.day);
+  // return convertDate.getDay();
 }
-
